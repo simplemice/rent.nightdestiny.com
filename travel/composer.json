@@ -1,0 +1,19 @@
+{
+    "name": "xtcode/monkeycar",
+    "description": "MonkeyCar website",
+    "type": "project",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Pavel Trunin",
+            "email": "pavel.trunin@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Monkeycar\\": "app/core"
+        }
+    },
+    "require": {}
+}
