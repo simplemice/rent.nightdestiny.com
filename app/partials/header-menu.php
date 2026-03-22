@@ -24,9 +24,7 @@
                     </li>
                 </ul>
                  <ul class="menu">
-		     <li class="inline"><a href="https://allmylinks.com/stankthailand" target=”_blank” title="Сухие соцветия на продажу"><span class="fas fa-cannabis"></span></a></li>
-             <li class="inline"><a href="/" title="Аренда автотранспорта."><span class="fas fa-car"></span></a></li>
-		     <li class="inline"><a href="/bike" title="Аренда мототранспорта."><span class="fas fa-motorcycle"></span></a></li>
+	             <li class="inline"><a href="/" title="Аренда автотранспорта."><span class="fas fa-car"></span></a></li>
 		     <li class="inline"><a href="/yacht" title="Аренда яхт и лодок."><span class="fas fa-ship"></span></a></li>
 		     <li class="inline"><a href="/travel" title="Экскурсии на любой вкус!"><span class="fas fa-route"></span></a></li>
 		     <li class="inline"><a href="/visa" title="Помощь в решении визовых вопросов."><span class="fas fa-passport"></span></a></li>

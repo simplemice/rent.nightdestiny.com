@@ -45,8 +45,8 @@ class Helper
      */
     public static function sendMessage($message): void
     {
-        $token = '1802589051:AAG9xM57C11fyqrIFXuw0QwIzP6XI_iteBY';
-        $chat_id = '-1001740961028';
+        $token = '8045134223:AAExkZlXeW342szUZ388wtfcz7IGhsW-1ME';
+        $chat_id = '-1001996176150';
 
         // Отправляем сообщение
         $fp = fopen(
