@@ -118,6 +118,7 @@ use Monkeycar\Helper as H;
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@4.4/dist/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
+<script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq789fbb681f7e363ccc62b2645d135dfdaf349e73cb0e15866964644100fa6c28" defer></script>
 
 <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
 
