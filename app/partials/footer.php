@@ -9,9 +9,6 @@ use Monkeycar\Helper as H;
             <div class="col col-md-3">
                 <h6>ИНФОРМАЦИЯ</h6>
                 <ul class="list-unstyled">
-                    <li><a href="dogovor.php">Договор аренды авто</a></li>
-                    <li><a href="instruction-on-dtp.php">Инструкция при ДТП</a></li>
-                    <li><a href="locations.php">Интересные локации</a></li>
                     <li><a href="actions.php">Акции и скидки</a></li>
                     <li><a href="prices.php">Оплата услуг</a></li>
                 </ul>
@@ -21,8 +18,6 @@ use Monkeycar\Helper as H;
                 <ul class="list-unstyled">
                     <li><a href="mission.php">Миссия</li>
                     <li><a href="goals.php">Цели</li>
-                    <li><a href="vacan.php">Вакансии</li>
-                    <li><a href="partnership.php">Сотрудничество</li>
                 </ul>
             </div>
             <div class="col-5 col-md-3">
@@ -33,18 +28,18 @@ use Monkeycar\Helper as H;
             <div class="col-7 col-md-4 text-right">
                 <ul class="list-inline">
                     <li class="list-inline-item">
-                        <a href="https://wa.me/66650210421" target="_blank"><span class="social icon-whatsapp"></span></a></li>
+                        <a href="https://wa.me/66942654121" target="_blank"><span class="social icon-whatsapp"></span></a></li>
                     <li class="list-inline-item">
-                        <a href="tg://resolve?domain=<@phuketservicekaron>" target="_blank"><span class="social icon-telegram"></span></a></li>
+                        <a href="tg://resolve?domain=<@simplemice>" target="_blank"><span class="social icon-telegram"></span></a></li>
                     <li class="list-inline-item">
-                        <a href="https://www.instagram.com/" target="_blank"><span class="social icon-instagram"></span></a>
+                        <a href="https://www.instagram.com/simplemice_" target="_blank"><span class="social icon-instagram"></span></a>
                     </li>
                 </ul>
                 <ul class="list-unstyled">
-                    <li><a href="https://wa.me/66650210421"> <span class="icon-phone"></span> +66650210421 Rus/Eng</a></li>
-                    <li><span class="icon-point"></span> <a href="https://maps.app.goo.gl/kx18WyUyw1NcPhos5" target="_blank">119 Taina Rd, Karon, Mueang Phuket District, Phuket 83100</a></li>
+                    <li><a href="https://wa.me/66942654121"> <span class="icon-phone"></span> +66942654121 Rus/Eng</a></li>
+                    <li><span class="icon-point"></span> <a href="https://maps.app.goo.gl/" target="_blank">Rawai, Mueang Phuket District, Phuket 83130</a></li>
                     <br>
-                    <li><small>Copyright© 2013-2024 <br> Nightdestiny Group</small></li>
+                    <li><small>Copyright© 2013-2026 <br> Nightdestiny Group</small></li>
                 </ul>
             </div>
         </div>
