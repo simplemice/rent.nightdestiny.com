@@ -56,7 +56,7 @@ try {
         'Delivery' => $_calc['delivery'].'$',
         'Options' => $_calc['options'].'$',
         'Total Price' => $_calc['total'].'$',
-        'Order from' => 'https://rent.nightdestiny.com',
+        'Order from' => 'rent.nightdestiny.com',
     ];
 
     $txt = '';
