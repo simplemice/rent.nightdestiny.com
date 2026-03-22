@@ -50,9 +50,9 @@ use Monkeycar\Helper as H;
     <div class="container">
          <div class="row">
              <marquee>
-                 <span>Все виды услуг в одном офисе - Аренда машин и мото, яхты, экскурсии, обмен валюты и многое другое!</span>
+                 <span>Все виды услуг в одном офисе - Аренда авто, яхты, экскурсии, обмен рублей и многое другое!</span>
              </marquee> 
-             <input type="button" style="margin-left: 50%" onClick="location.href='https://t.me/phuketservicekaron'" value='Контакт'>
+             <input type="button" style="margin-left: 50%" onClick="location.href='https://t.me/simplemice'" value='Telegram'>
      </div>
      <br>
         <div class="row">
