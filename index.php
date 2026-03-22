@@ -53,6 +53,7 @@ use Monkeycar\Helper as H;
                  <span>Все виды услуг в одном офисе - Аренда авто, яхты, экскурсии, обмен рублей и многое другое!</span>
              </marquee> 
              <input type="button" style="margin-left: 50%" onClick="location.href='https://t.me/simplemice'" value='Telegram'>
+             <input type="button" style="margin-left: 50%" onClick="location.href='https://wa.me/66942654121'" value='Whatsapp'>
      </div>
      <br>
         <div class="row">
