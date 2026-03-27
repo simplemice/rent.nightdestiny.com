@@ -29,17 +29,10 @@ use Monkeycar\Helper as H;
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-J6HMVPCXPZ');
+  gtag('config', 'G-JR5Q0C11QT');
 </script>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GPR0F58650">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GPR0F58650');
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JR5Q0C11QT">
 </script>
 </head>
 <body>
