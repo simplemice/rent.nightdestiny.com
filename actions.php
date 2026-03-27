@@ -22,7 +22,7 @@ use Monkeycar\Helper as H;
     <title>Дешевая аренда авто на Пхукете!</title>
     <meta name="robots" content="index, follow">
     <meta name="description" content="Лучший прокат авто на Пхукете, звоните прямо сейчас и получите специальную скидку WhatsApp +66881000005">
-<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JR5Q0C11QT"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

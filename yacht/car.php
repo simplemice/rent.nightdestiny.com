@@ -39,13 +39,13 @@ $simPrice = $store->getExtraByKey('sim');
     <meta name="robots" content="index, follow">
     <meta name="description" content="">
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J6HMVPCXPZ"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JR5Q0C11QT"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-J6HMVPCXPZ');
+  gtag('config', 'G-JR5Q0C11QT');
 </script>
 </head>
 <body>
