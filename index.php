@@ -40,7 +40,7 @@ use Monkeycar\Helper as H;
     <div class="container">
          <div class="row">
              <marquee>
-                 <span>Все виды услуг в одном офисе - Аренда авто, яхты, экскурсии, обмен рублей и многое другое!</span>
+                 <span>Все виды услуг в одном офисе - Аренда Авто или Яхты, Экскурсии, Апартаменты и Виллы, Обмен Рублей и многое другое!</span>
              </marquee> 
              <input type="button" style="margin-left: 50%" onClick="location.href='https://t.me/simplemice'" value='Telegram'>
              <input type="button" style="margin-left: 50%" onClick="location.href='https://wa.me/66942654121'" value='Whatsapp'>
@@ -111,7 +111,7 @@ use Monkeycar\Helper as H;
                     <div class="card-body">
                         <h5 class="card-title"><span class="icon-phone"></span><b> +66 094-265-41-21 Rus/Eng</b></h5>
                         <p class="card-text">Работаем ежедневно <br>с 8:00 - 23:00</p>
-                        <a href="https://maps.app.goo.gl/sWmBbcubw2gmJirw6" class="btn btn-success2">Локация офиса</a> <br><br>
+                        <a href="https://maps.app.goo.gl/9b4uR9qGfEuf6xnRA" class="btn btn-success2">Локация офиса</a> <br><br>
                         <a href="https://wa.me/66942654121?text=Здравствуйте!" class="btn btn-success2"><span class="icon-whatsapp"></span> WhatsApp</a>
                     </div>
                 </div>
