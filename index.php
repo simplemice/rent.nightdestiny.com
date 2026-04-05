@@ -221,38 +221,4 @@ use Monkeycar\Helper as H;
         </div>
     </div>
 
-<!-- SEO CONTENT FOR GOOGLE -->
-<section class="container mt-5 mb-5 seo-text">
-
-<h2>Car Rental in Phuket</h2>
-<p>
-Nightdestiny provides professional car rental services in Phuket with convenient
-delivery to Phuket International Airport, hotels, villas, and condos across the island.
-Choose from economy cars, family SUVs, and long-term rental vehicles with full insurance included.
-</p>
-
-<h2>Phuket Airport Car Rental Service</h2>
-<p>
-Rent a car directly at Phuket Airport and start your trip immediately.
-Our team delivers vehicles on time with fast paperwork and transparent pricing.
-No hidden fees, simple booking process, and English or Russian support available.
-</p>
-
-<h2>Areas We Serve</h2>
-<p>
-We provide car rental delivery across Phuket including Rawai, Chalong, Kata,
-Karon, Patong, Kamala, Surin, Bang Tao, Nai Harn and Phuket Airport.
-</p>
-
-<h2>Why Rent with Nightdestiny</h2>
-<ul>
-<li>Full insurance coverage</li>
-<li>Unlimited mileage</li>
-<li>Airport & hotel delivery</li>
-<li>24/7 roadside assistance</li>
-<li>Easy online booking</li>
-</ul>
-
-</section>
-
     <?php include 'app/partials/footer.php' ?>
