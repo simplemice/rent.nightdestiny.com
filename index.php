@@ -21,7 +21,7 @@ use Monkeycar\Helper as H;
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap&subset=cyrillic" rel="stylesheet">
     <title>Car Rental Phuket | Rent a Car Phuket Airport | Rawai, Chalong, Kata, Karon, Bangtao</title>
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Car rental in Phuket with airport delivery, full insurance and best prices. Rent a car in Phuket easily with Nightdestiny. Book online today +66942654121.">
+    <meta name="description" content="Car rental in Phuket with airport delivery, full insurance and best prices. Rent a car in Phuket easily with Us. Book online today +66942654121.">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8V98B9L0YW"></script>
 <script>
