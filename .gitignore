@@ -16,15 +16,17 @@
 !README.md
 !assets/
 !assets/**
+!app/
+!app/**
+!api/
+!api/**
+!vendor/
+!vendor/**
 
 # ---- Never track (even if matched above) ----
 # secrets / local config
 app/config.local.php
 .env
-# server-side private code, deployed separately
-api/
-app/
-vendor/
 yandex*
 # logs and backups
 error_log
