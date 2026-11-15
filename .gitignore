@@ -1,4 +1,4 @@
-# Ignore EVERYTHING
+# Ignore EVERYTHING by default; only whitelisted site files are tracked
 *
 
 # Allow git control files
@@ -6,11 +6,37 @@
 !.gitattributes
 !.github/
 
-# ---- Allow selected ----
+# ---- Site files that belong in git ----
+!.htaccess
+!*.php
+!robots.txt
+!sitemap.xml
+!favicon.ico
+!composer.json
+!README.md
+!assets/
+!assets/**
 
-# ---- Not Allow selected ----
-
+# ---- Never track (even if matched above) ----
+# secrets / local config
+app/config.local.php
+.env
+# server-side private code, deployed separately
 api/
 app/
 vendor/
 yandex*
+# logs and backups
+error_log
+*/error_log
+*.log
+*.tgz
+_backup*
+# audit / working documents (local only)
+SEO_AUDIT.md
+TECHNICAL_AUDIT.md
+SEO_CHANGES.md
+BUGFIXES.md
+GOOGLE_SEARCH_CONSOLE.md
+TEST_REPORT.md
+CHANGELOG.md

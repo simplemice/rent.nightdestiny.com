@@ -1,116 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://rent.nightdestiny.com/</loc>
-  <lastmod>2026-03-27T14:13:36+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://rent.nightdestiny.com/car.php?car=1&amp;date_from=2026-03-27+12%3A00&amp;date_to=2026-03-30+12%3A00</loc>
-  <lastmod>2026-03-27T14:13:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rent.nightdestiny.com/car.php?car=2&amp;date_from=2026-03-27+12%3A00&amp;date_to=2026-03-30+12%3A00</loc>
-  <lastmod>2026-03-27T14:13:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rent.nightdestiny.com/car.php?car=3&amp;date_from=2026-03-27+12%3A00&amp;date_to=2026-03-30+12%3A00</loc>
-  <lastmod>2026-03-27T14:13:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rent.nightdestiny.com/car.php?car=4&amp;date_from=2026-03-27+12%3A00&amp;date_to=2026-03-30+12%3A00</loc>
-  <lastmod>2026-03-27T14:13:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rent.nightdestiny.com/car.php?car=5&amp;date_from=2026-03-27+12%3A00&amp;date_to=2026-03-30+12%3A00</loc>
-  <lastmod>2026-03-27T14:13:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rent.nightdestiny.com/car.php?car=6&amp;date_from=2026-03-27+12%3A00&amp;date_to=2026-03-30+12%3A00</loc>
-  <lastmod>2026-03-27T14:13:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rent.nightdestiny.com/car.php?car=7&amp;date_from=2026-03-27+12%3A00&amp;date_to=2026-03-30+12%3A00</loc>
-  <lastmod>2026-03-27T14:13:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rent.nightdestiny.com/car.php?car=8&amp;date_from=2026-03-27+12%3A00&amp;date_to=2026-03-30+12%3A00</loc>
-  <lastmod>2026-03-27T14:13:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rent.nightdestiny.com/car.php?car=10&amp;date_from=2026-03-27+12%3A00&amp;date_to=2026-03-30+12%3A00</loc>
-  <lastmod>2026-03-27T14:13:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rent.nightdestiny.com/car.php?car=11&amp;date_from=2026-03-27+12%3A00&amp;date_to=2026-03-30+12%3A00</loc>
-  <lastmod>2026-03-27T14:13:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rent.nightdestiny.com/car.php?car=12&amp;date_from=2026-03-27+12%3A00&amp;date_to=2026-03-30+12%3A00</loc>
-  <lastmod>2026-03-27T14:13:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rent.nightdestiny.com/car.php?car=13&amp;date_from=2026-03-27+12%3A00&amp;date_to=2026-03-30+12%3A00</loc>
-  <lastmod>2026-03-27T14:13:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rent.nightdestiny.com/car.php?car=14&amp;date_from=2026-03-27+12%3A00&amp;date_to=2026-03-30+12%3A00</loc>
-  <lastmod>2026-03-27T14:13:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rent.nightdestiny.com/car.php?car=15&amp;date_from=2026-03-27+12%3A00&amp;date_to=2026-03-30+12%3A00</loc>
-  <lastmod>2026-03-27T14:13:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rent.nightdestiny.com/car.php?car=16&amp;date_from=2026-03-27+12%3A00&amp;date_to=2026-03-30+12%3A00</loc>
-  <lastmod>2026-03-27T14:13:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rent.nightdestiny.com/car.php?car=17&amp;date_from=2026-03-27+12%3A00&amp;date_to=2026-03-30+12%3A00</loc>
-  <lastmod>2026-03-27T14:13:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rent.nightdestiny.com/car.php?car=18&amp;date_from=2026-03-27+12%3A00&amp;date_to=2026-03-30+12%3A00</loc>
-  <lastmod>2026-03-27T14:13:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rent.nightdestiny.com/car.php?car=19&amp;date_from=2026-03-27+12%3A00&amp;date_to=2026-03-30+12%3A00</loc>
-  <lastmod>2026-03-27T14:13:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rent.nightdestiny.com/car.php?car=20&amp;date_from=2026-03-27+12%3A00&amp;date_to=2026-03-30+12%3A00</loc>
-  <lastmod>2026-03-27T14:13:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rent.nightdestiny.com/car.php?car=21&amp;date_from=2026-03-27+12%3A00&amp;date_to=2026-03-30+12%3A00</loc>
-  <lastmod>2026-03-27T14:13:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://rent.nightdestiny.com/</loc><lastmod>2026-11-15</lastmod><priority>1.0</priority></url>
+  <url><loc>https://rent.nightdestiny.com/car.php?car=1</loc><lastmod>2024-01-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://rent.nightdestiny.com/car.php?car=2</loc><lastmod>2024-01-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://rent.nightdestiny.com/car.php?car=3</loc><lastmod>2024-01-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://rent.nightdestiny.com/car.php?car=4</loc><lastmod>2024-01-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://rent.nightdestiny.com/car.php?car=5</loc><lastmod>2024-01-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://rent.nightdestiny.com/car.php?car=6</loc><lastmod>2024-01-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://rent.nightdestiny.com/car.php?car=7</loc><lastmod>2024-01-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://rent.nightdestiny.com/car.php?car=8</loc><lastmod>2024-01-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://rent.nightdestiny.com/car.php?car=10</loc><lastmod>2024-01-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://rent.nightdestiny.com/car.php?car=11</loc><lastmod>2024-01-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://rent.nightdestiny.com/car.php?car=12</loc><lastmod>2024-01-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://rent.nightdestiny.com/car.php?car=13</loc><lastmod>2024-01-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://rent.nightdestiny.com/car.php?car=14</loc><lastmod>2024-01-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://rent.nightdestiny.com/car.php?car=15</loc><lastmod>2024-01-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://rent.nightdestiny.com/car.php?car=16</loc><lastmod>2024-01-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://rent.nightdestiny.com/car.php?car=17</loc><lastmod>2024-01-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://rent.nightdestiny.com/car.php?car=18</loc><lastmod>2024-01-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://rent.nightdestiny.com/car.php?car=19</loc><lastmod>2024-01-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://rent.nightdestiny.com/car.php?car=20</loc><lastmod>2024-01-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://rent.nightdestiny.com/car.php?car=21</loc><lastmod>2024-01-26</lastmod><priority>0.8</priority></url>
 </urlset>

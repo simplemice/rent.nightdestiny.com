@@ -371,3 +371,10 @@ border: 1px solid #d6ab1f;
     border-radius: .3rem;
     outline: 0;
 }
+
+/* --- SEO info block / a11y additions (2026-11 audit) --- */
+.seo-info { font-size: 15px; line-height: 1.6; }
+.seo-info ul { padding-left: 1.2rem; }
+.car-img picture, .car-img img { display: block; max-width: 100%; height: auto; }
+.car-info a.text-reset:hover { text-decoration: underline; }
+a:focus-visible, button:focus-visible { outline: 2px solid #28a745; outline-offset: 2px; }

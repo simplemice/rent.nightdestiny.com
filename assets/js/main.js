@@ -118,12 +118,23 @@ $('.js-form-place').on('submit', function(e) {
 
                 Swal.fire({
                     icon: 'error',
-                    title: 'Error!',
-                    text: 'Something went wrong!'
+                    title: 'Ошибка',
+                    text: 'Не удалось отправить заявку. Проверьте телефон или напишите нам в WhatsApp: +66942654121'
                 });
             },
             success: function(data) {
+                if (!data || !data.status) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Ошибка',
+                        text: 'Не удалось отправить заявку. Напишите нам в WhatsApp: +66942654121'
+                    });
+                    return;
+                }
                 var orderNo = data.payload.order;
+                if (typeof gtag === 'function') {
+                    gtag('event', 'generate_lead', {currency: 'USD', value: parseFloat($('#js-total').text()) || 0});
+                }
 
                 Swal.fire({
                     icon: 'success',
@@ -138,5 +149,15 @@ $('.js-form-place').on('submit', function(e) {
                 $form.trigger('reset');
             }
         });
+    }
+});
+
+
+/**
+ * Contact click tracking (GA4 events). Delegated, one handler, no duplicates.
+ */
+$(document).on('click', 'a[data-track]', function() {
+    if (typeof gtag === 'function') {
+        gtag('event', 'contact_click', {contact_method: $(this).data('track')});
     }
 });

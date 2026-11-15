@@ -12,41 +12,44 @@ $calculator = new \Monkeycar\Calculator($store, $request);
 try {
     $car = $store->getCarFromRequest($request);
 } catch (\Exception $e) {
-    \Monkeycar\Helper::redirect('/');
+    http_response_code(404);
+    include __DIR__.'/404.php';
+    exit;
 }
 
 $carId = $car['id'];
 $_carLink = '/car.php?'.http_build_query($request->getPayload());
 
 $_calcPrice = $calculator->calculatePrice($carId);
-$_carLink = '/car.php?'.http_build_query($request->getPayload());
 
 $insurancePrice = $_calcPrice['price'] * (float)$store->getExtraByKey('insurance') / 100;
 $chairPrice = $_calcPrice['days'] * (float)$store->getExtraByKey('baby_chair');
 $simPrice = $store->getExtraByKey('sim');
 
+$_carName = H::carName($car);
+$_carUrl = H::absUrl(H::carPath($carId));
+$_carImageUrl = H::absUrl('/assets/images/'.rawurlencode($car['image']));
+$seo = [
+    'title' => 'Аренда '.$_carName.($car['year'] ? ' '.$car['year'] : '').' на Пхукете — условия, депозит | '.H::SITE_NAME,
+    'description' => H::carDescription($car),
+    'canonical' => $_carUrl,
+    'og_image' => $_carImageUrl,
+    'schema' => [
+        [
+            '@context' => 'https://schema.org',
+            '@type' => 'BreadcrumbList',
+            'itemListElement' => [
+                ['@type' => 'ListItem', 'position' => 1, 'name' => 'Аренда авто на Пхукете', 'item' => H::absUrl('/')],
+                ['@type' => 'ListItem', 'position' => 2, 'name' => $_carName, 'item' => $_carUrl],
+            ],
+        ],
+    ],
+];
+
 ?><!DOCTYPE html>
 <html lang="<?=H::currentLanguageCode()?>">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta charset="utf-8">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css?v=5">
-    <link rel="stylesheet" type="text/css" href="/assets/style.css?v=5">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap&subset=cyrillic" rel="stylesheet">
-    <title><?=$car['model']?> от <?=$_calcPrice['per_day']['price']?>$ в сутки</title>
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8V98B9L0YW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7LP6NTXNHG');
-</script>
+<?php include __DIR__.'/app/partials/head.php' ?>
 </head>
 <body>
 <?php include 'app/partials/header-menu.php'?>
@@ -89,7 +92,7 @@ $simPrice = $store->getExtraByKey('sim');
                         </select>
                     </div>
                     <div class="form-group">
-                        <label class="" for=""><span class="icon-calendar"></span> <?=H::t('form:date_from')?></label>
+                        <label for="date_from"><span class="icon-calendar"></span> <?=H::t('form:date_from')?></label>
                         <input id="date_from"
                                class="form-control"
                                name="date_from"
@@ -97,7 +100,7 @@ $simPrice = $store->getExtraByKey('sim');
                                value="<?=$request->getStartDate()->format('Y-m-d H:i')?>">
                     </div>
                     <div class="form-group">
-                        <label class="" for=""><span class="icon-calendar"></span> <?=H::t('form:date_to')?></label>
+                        <label for="date_to"><span class="icon-calendar"></span> <?=H::t('form:date_to')?></label>
                         <input id="date_to"
                                class="form-control"
                                name="date_to"
@@ -108,9 +111,13 @@ $simPrice = $store->getExtraByKey('sim');
                 </form>
             </div>
             <div class="col-md-7 col-lg-9 pp">
+                <nav aria-label="breadcrumb"><ol class="breadcrumb bg-transparent px-0">
+                    <li class="breadcrumb-item"><a href="/">Аренда авто на Пхукете</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><?=H::e($_carName)?></li>
+                </ol></nav>
                 <div class="car-box">
                     <div class="row car-top">
-                        <?php include 'app/partials/car-specifications.php'?>
+                        <?php $_carHeading = 'h1'; $_eagerImage = true; include 'app/partials/car-specifications.php'?>
                         <div class="col-auto car-price text-right">
                             <?php if ($_calcPrice['discountPercentage']): ?>
                                 <h5 class="sale">$ <?=$_calcPrice['per_day']['old_price']?></h5>
@@ -123,83 +130,21 @@ $simPrice = $store->getExtraByKey('sim');
                     </div>
 
                     <div class="car-tabs">
-                        <ul class="nav nav-fill" id="pills-tab" role="tablist">
+                        <ul class="nav nav-fill" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link"><?=$car['rating']?> Рейтинг</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="modal" data-target=".bd-terms-modal-lg"><span class="icon-doc"></span> Условия</a>
-                                <!-- Large modal -->
-                                <div id="modal-conditions-<?=$car['id']?>" class="modal fade bd-terms-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h4 class="modal-title"><span class="icon-second-doc"></span> <strong><?=H::t('car-terms-conditions')?></strong></h4>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body text-left">
-                                                <div class="row">
-                                                    <div class="col-auto mr-auto">
-                                                        <h6><strong><?=H::t('car-terms')?></strong></h6>
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        <a type="button" data-toggle="collapse" data-target="#car-terms" aria-expanded="false" aria-controls="car-terms">+</a>
-                                                    </div>
-                                                </div>
-                                                <div class="collapse" id="car-terms">
-                                                    <?=H::t('car-terms-list')?>
-                                                </div>
-                                                <hr>
-                                                <div class="row">
-                                                    <div class="col-auto mr-auto">
-                                                        <h6><strong><?=H::t('car-conditions')?></strong></h6>
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        <a type="button" data-toggle="collapse" data-target="#car-conditions" aria-expanded="false" aria-controls="car-conditions">+</a>
-                                                    </div>
-                                                </div>
-                                                <div class="collapse" id="car-conditions">
-                                                    <?=H::t('car-conditions-list')?>
-                                                </div>
-                                                <hr>
-                                                <div class="row">
-                                                    <div class="col-auto mr-auto">
-                                                        <h6><strong><?=H::t('car-use')?></strong></h6>
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        <a type="button" data-toggle="collapse" data-target="#car-use" aria-expanded="false" aria-controls="car-use">+</a>
-                                                    </div>
-                                                </div>
-                                                <div class="collapse" id="car-use">
-                                                    <?=H::t('car-use-list')?>
-                                                </div>
-                                                <hr>
-                                                <div class="row">
-                                                    <div class="col-auto mr-auto">
-                                                        <h6><strong><?=H::t('car-tenant')?></strong></h6>
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        <a type="button" data-toggle="collapse" data-target="#car-tenant" aria-expanded="false" aria-controls="car-tenant">+</a>
-                                                    </div>
-                                                </div>
-                                                <div class="collapse" id="car-tenant">
-                                                    <?=H::t('car-tenant-list')?>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <a class="nav-link" href="#modal-conditions" data-toggle="modal" data-target="#modal-conditions"><span class="icon-doc"></span> Условия</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="modal" data-target=".bd-reviews-modal-lg"><span class="icon-like"></span> Отзывы</a>
+                                <a class="nav-link" href="#modal-reviews" data-toggle="modal" data-target="#modal-reviews"><span class="icon-like"></span> Отзывы</a>
                                 <!-- Large modal -->
-                                <div class="modal fade bd-reviews-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div id="modal-reviews" class="modal fade bd-reviews-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title">Отзывы</h5>
+                                                <div class="modal-title h5">Отзывы</div>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                                 </button>
@@ -239,7 +184,7 @@ $simPrice = $store->getExtraByKey('sim');
                     </div>
                     <form class="needs-validation js-form-place" method="post" novalidate>
                         <?php foreach ($request->getPayload() as $key => $item): ?>
-                            <input type="hidden" name="<?=$key?>" value="<?=$item?>">
+                            <input type="hidden" name="<?=H::e($key)?>" value="<?=H::e($item)?>">
                         <?php endforeach ?>
 
                         <table class="table table-hover">
