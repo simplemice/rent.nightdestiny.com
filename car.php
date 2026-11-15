@@ -45,7 +45,7 @@ $simPrice = $store->getExtraByKey('sim');
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-8V98B9L0YW');
+  gtag('config', 'G-7LP6NTXNHG');
 </script>
 </head>
 <body>
